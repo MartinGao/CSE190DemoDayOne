@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var changeTextButton: UIButton!
+    @IBOutlet weak var firstLabel: UILabel!
 
+    @IBAction func nextPage(sender: AnyObject) {
+
+    }
+    @IBAction func changeText(sender: AnyObject) {
+        self.firstLabel.text = "Martin Is Cool!"
+        self.changeTextButton.enabled = false;
+    }
 }
 
